@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIXED DEPOSIT</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://wallpapers.com/images/hd/plain-background-0aqx3e65vih1xev1.jpg);
+}
+.style h2{
+    padding: 16px;
+    text-align: center;
+}
+.style {
+    width: 300px;
+    padding: 16px;
+    background-color: lightblue;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type=text], input[type=number],input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    background-color: purple;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type=submit]:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <div class="style">
+            
+            <h2>FIXED DEPOSIT DETAILS</h2>
+            <label>FD ID</label>
+            <input type="number" placeholder="Enter FD ID" required>
+            <label>FD Account Number</label>
+            <input type="number" placeholder="Enter fd account number " required>
+
+            <label>Customer ID</label>
+            <input type="number" placeholder="Enter Customer ID" required>
+            
+            <label>FD Type</label>
+            <input type="text" placeholder="Enter FD Type" required>
+            <label>FD Amount</label>
+            <input type="number" placeholder="enter amount" required>
+            
+            <label>Interest Rate</label>
+            <input type="number" placeholder="Enter Interest rate" required>  
+            <label>Tenure</label>
+            <input type="number" placeholder="enter tenure" required>
+            
+            <div>
+                <label>Maturity Date</label>
+                <input type="date"  required>
+            </div>
+            <label>Transaction Status</label>
+            <input type="text" placeholder="enter Status" required>
+            <div>
+                <label>Transaction Date</label>
+                <input type="date"  required>
+            </div>
+
+            <label>FD Transaction Amount</label>
+            <input type="number" placeholder="enter transaction amount" required>
+
+            <label>FD Transaction Remarks</label>
+            <input type="text" placeholder="enter transaction amount" required>
+            
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

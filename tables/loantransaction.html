@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAN TRANSACTION</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://wallpapers.com/images/hd/plain-background-0aqx3e65vih1xev1.jpg);
+}
+.style h2{
+    padding: 16px;
+    text-align: center;
+}
+.style {
+    width: 300px;
+    padding: 16px;
+    background-color: lightblue;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type=text], input[type=number],input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    background-color: purple;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type=submit]:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <div class="style">
+            
+            <h2>LOAN TRANSACTION DETAILS</h2>
+            <label>Transaction ID</label>
+            <input type="number" placeholder="Enter Transaction ID" required>
+            
+            <label>Loan ID</label>
+            <input type="number" placeholder="Enter Loan ID" required>
+            
+            <label>Transaction Type</label>
+            <input type="text" placeholder="Enter Transaction type" required>
+
+            <label>Amount</label>
+            <input type="number" placeholder="enter amount" required>
+            <div>
+                <label>Date</label>
+                <input type="date"  required>
+            </div>
+            <label>Transaction Status</label>
+            <input type="text" placeholder="enter Status" required>
+            
+            
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

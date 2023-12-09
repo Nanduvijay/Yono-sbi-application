@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAN</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://wallpapers.com/images/hd/plain-background-0aqx3e65vih1xev1.jpg);
+}
+.style h2{
+    padding: 16px;
+    text-align: center;
+}
+.style {
+    width: 300px;
+    padding: 16px;
+    background-color: lightblue;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type=text], input[type=number], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    background-color: purple;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type=submit]:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <div class="style">
+            
+            <h2>LOAN DETAILS</h2>
+            <label>loan ID</label>
+            <input type="number" placeholder="Enter loan ID" required>
+            
+            <label>Customer ID</label>
+            <input type="number" placeholder="Enter Customer ID" required>
+            
+            <label>Type</label>
+            <input type="text" placeholder="Enter loan type" required>
+            
+            <label>Amount</label>
+            <input type="number" placeholder="Enter amount" required>
+            
+            <label>Interest Rate</label>
+            <input type="number" placeholder="Enter Interest Rate" required>
+
+            <label>Tenure</label>
+            <input type="number" placeholder="enter Tenure" required>
+            
+            <label>Status</label>
+            <input type="text" placeholder="enter Status" required>
+            <div><label>Application Date</label>
+                <input type="date"  required>
+            </div>
+            
+             <div><label>Disbursement Date</label>
+                <input type="date" required>
+            </div>
+            
+            
+            
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://wallpapers.com/images/hd/plain-background-0aqx3e65vih1xev1.jpg);
+}
+.style h2{
+    padding: 16px;
+    text-align: center;
+}
+.style {
+    width: 300px;
+    padding: 16px;
+    background-color: lightblue;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type=text], input[type=number],input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    background-color: purple;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type=submit]:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <form action="http://localhost:3000/register-card" method="POST" class="form">
+        <div class="style">
+            <h2>CARD DETAILS</h2>
+    
+            <label>Card ID</label>
+            <input type="number" name="cardId" placeholder="Enter Card ID" required>
+    
+            <label>Customer ID</label>
+            <input type="number" name="customerId" placeholder="Enter Customer ID" required>
+    
+            <label>Type</label>
+            <input type="text" name="type" placeholder="Enter type" required>
+    
+            <label>CARD Number</label>
+            <input type="number" name="cardNumber" placeholder="Enter Card Number" required>
+    
+            <label>CVV</label>
+            <input type="number" name="cvv" placeholder="Enter CVV" required>
+    
+            <div>
+                <label>Card Expiry</label>
+                <input type="date" name="cardExpiry" required>
+            </div>
+    
+            <label>Status</label>
+            <input type="text" name="status" placeholder="Enter Status" required>
+    
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
